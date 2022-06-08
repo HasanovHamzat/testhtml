@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" type="image/x-icon"
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAANcNAADXDQAAAAAAAAAAAABcuFzqXLhc8Vy4XPFcuFzxXLhc8Vy4XPFcuFzxXLhc8Vy4XPFcuFzxXLhc8Vy4XPFcuFzxXLhc8Vy4XPFcuFzqXLhc8ly4XP9cuFz/XLhc/1y4XP9cuFz/XLhc/1y4XP9cuFz/XLhc/1y4XP9cuFz/XLhc/1y4XP9cuFz/XLhc8Vy4XPJcuFz/XLhc/3DBcP/J58n/yefJ/8nnyf/J58n/weTB/6naqf97xXv/Xbhd/1y4XP9cuFz/XLhc/1y4XPFcuFzyXLhc/1y4XP96xXr//////9rv2v/J58n/yejJ/9Lr0v/y+vL/9vv2/6fZp/9cuFz/XLhc/1y4XP9cuFzxXLhc8ly4XP9cuFz/esV6//7+/v+Ozo7/XLhc/1y4XP9cuFz/ZLtk/7vhu//9/v3/gsmC/1y4XP9cuFz/XLhc8Vy4XPJcuFz/XLhc/3rFev/+/v7/js6O/1y4XP9cuFz/XLhc/1y4XP9mvGb/6PXo/8royv9cuFz/XLhc/1y4XPFcuFzyXLhc/1y4XP96xXr//v7+/47Ojv9cuFz/XLhc/1y4XP9cuFz/XLhc/8Hkwf/t9+3/Yrti/1y4XP9cuFzxXLhc8ly4XP9cuFz/esV6//7+/v+Ozo7/XLhc/1y4XP9cuFz/XLhc/1y4XP+u3K7/8/rz/27Abv9cuFz/XLhc8Vy4XPJcuFz/XLhc/3rFev/+/v7/js6O/1y4XP9cuFz/XLhc/1y4XP9cuFz/r9yv//P68/9uwG7/XLhc/1y4XPFcuFzyXLhc/1y4XP96xXr//v7+/47Ojv9cuFz/XLhc/1y4XP9cuFz/XLhc/8Plw//s9+z/Yrpi/1y4XP9cuFzxXLhc8ly4XP9cuFz/esV6//7+/v+Ozo7/XLhc/1y4XP9cuFz/XLhc/2m+af/r9uv/xubG/1y4XP9cuFz/XLhc8Vy4XPJcuFz/XLhc/3rFev/+/v7/js6O/1y4XP9cuFz/XLhc/2y/bP/H58f/+/37/3zGfP9cuFz/XLhc/1y4XPFcuFzyXLhc/1y4XP96xXr//////+n26f/f8d//4PHg/+j16P/7/fv/8vny/5jSmP9cuFz/XLhc/1y4XP9cuFzxXLhc8ly4XP9cuFz/a79r/7DdsP+w3bD/sN2w/6/cr/+o2aj/mdOZ/3LCcv9cuFz/XLhc/1y4XP9cuFz/XLhc8Vy4XPJcuFz/XLhc/1y4XP9cuFz/XLhc/1y4XP9cuFz/XLhc/1y4XP9cuFz/XLhc/1y4XP9cuFz/XLhc/1y4XPFcuFzpXLhc8Fy4XPBcuFzwXLhc8Fy4XPBcuFzwXLhc8Fy4XPBcuFzwXLhc8Fy4XPBcuFzwXLhc8Fy4XPBcuFzpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==">
+    <title>ertete</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        .contentId {
+            display: none;
+            visibility: hidden
+        }
+
+        .clearFix {
+            clear: both;
+            width: 0;
+            height: 0;
+            margin: 0;
+            padding: 0
+        }
+
+        .notification {
+            font-size: 14pt;
+            font-kerning: none;
+            color: black;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border-width: 0;
+            -ms-overflow-style: none;
+            overflow: auto;
+            font-family: Arial, Times New Roman, Helvetica, sans-serif;
+            position: relative
+        }
+
+        .notification .notification__header {
+            display: none
+        }
+
+        .notification .notification__title {
+            display: none
+        }
+
+        .notification .notification__content {
+            min-width: 320px;
+            text-align: justify;
+            overflow-y: auto;
+            height: 100%
+        }
+
+        .notification .notification__content .notification__content__text {
+            padding: 0
+        }
+
+        .notification .notification__buttons {
+            display: none
+        }
+
+        .notification .notification__footer {
+            display: none
+        }
+
+        .notification .svgIcons {
+            cursor: pointer
+        }
+
+        .notification .svgIcons svg:hover {
+            fill: #e7ef00
+        }
+
+        .notification .notification__close {
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            right: 20px;
+            top: 20px
+        }
+
+        .notification .resize_icon {
+            width: 10px;
+            height: 10px;
+            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8Zz4KICA8dGl0bGU+UmVzaXplIEljb248L3RpdGxlPgogIDxyZWN0IGlkPSJzdmdfMDciIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgeT0iODAiIHg9IjAwIiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZT0iIzAwMCIgZmlsbD0iIzMzMzMzMyIvPgogIDxyZWN0IGlkPSJzdmdfMjIiIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgeT0iNjQiIHg9IjE2IiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZT0iIzAwMCIgZmlsbD0iIzMzMzMzMyIvPgogIDxyZWN0IGlkPSJzdmdfMjMiIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgeT0iNDgiIHg9IjMyIiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZT0iIzAwMCIgZmlsbD0iIzMzMzMzMyIvPgogIDxyZWN0IGlkPSJzdmdfMjQiIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgeT0iMzIiIHg9IjQ4IiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZT0iIzAwMCIgZmlsbD0iIzMzMzMzMyIvPgogIDxyZWN0IGlkPSJzdmdfMjUiIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgeT0iMTYiIHg9IjY0IiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZT0iIzAwMCIgZmlsbD0iIzMzMzMzMyIvPgogIDxyZWN0IGlkPSJzdmdfMjYiIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgeT0iMDAiIHg9IjgwIiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZT0iIzAwMCIgZmlsbD0iIzMzMzMzMyIvPgogIDxyZWN0IGlkPSJzdmdfMjciIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgeT0iNzYiIHg9IjQ0IiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZT0iIzAwMCIgZmlsbD0iIzMzMzMzMyIvPgogIDxyZWN0IGlkPSJzdmdfMjgiIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgeT0iNjAiIHg9IjYwIiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZT0iIzAwMCIgZmlsbD0iIzMzMzMzMyIvPgogIDxyZWN0IGlkPSJzdmdfMjkiIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgeT0iNDQiIHg9Ijc2IiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZT0iIzAwMCIgZmlsbD0iIzMzMzMzMyIvPgogIDxyZWN0IGlkPSJzdmdfMzAiIGhlaWdodD0iMTYiIHdpZHRoPSIxNiIgeT0iODAiIHg9IjgwIiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZT0iIzAwMCIgZmlsbD0iIzMzMzMzMyIvPgogPC9nPgo8L3N2Zz4=');
+            background-size: 10px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            cursor: se-resize;
+            display: none
+        }
+
+        @keyframes ticker-ltr-direction {
+            0% {
+                transform: translate(0, 0)
+            }
+
+            100% {
+                transform: translate(-100%, 0)
+            }
+        }
+
+        @keyframes ticker-rtl-direction {
+            0% {
+                transform: translate(-100%, 0)
+            }
+
+            100% {
+                transform: translate(0, 0)
+            }
+        }
+
+        .notificationTicker {
+            display: grid;
+            display: -ms-grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 37px 1fr 36px;
+            -ms-grid-rows: 1fr;
+            -ms-grid-columns: 37px 1fr 36px;
+            color: black;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #e7ef00;
+            border-left: none;
+            border-right: none;
+            overflow: hidden;
+            font-family: Arial;
+            font-size: 12pt;
+            position: relative;
+            height: 100%;
+            min-height: 36px;
+            width: 100%;
+            margin: 0;
+            padding: 0
+        }
+
+        .notificationTicker .notificationTicker__logo {
+            grid-row: 1;
+            grid-column: 1;
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+            background-color: #e7ef00;
+            position: relative
+        }
+
+        .notificationTicker .notificationTicker__logo .notificationTicker__logo_img {
+            width: 35px;
+            height: 35px;
+            display: block;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            background-image: url("http://diamooncomp/DeskAlerts/ContentPagesTemplates/BaseTemplate/Images/ticker_logo.png");
+            background-position: center center;
+            background-repeat: no-repeat
+        }
+
+        .notificationTicker .notificationTicker__content {
+            grid-row: 1;
+            grid-column: 2;
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+            background-color: white;
+            padding: 2px 10px;
+            position: relative
+        }
+
+        .notificationTicker .notificationTicker__content marquee {
+            display: inline-block
+        }
+
+        .notificationTicker .notificationTicker__content marquee * {
+            display: inline-block
+        }
+
+        .notificationTicker .notificationTicker__content .notificationTicker__content__marquee-wrapper {
+            display: block;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .notificationTicker .notificationTicker__content .notificationTicker__content__marquee-wrapper .notificationTicker__content__marquee {
+            display: inline-block;
+            padding-left: 100%
+        }
+
+        .notificationTicker .notificationTicker__content .notificationTicker__content__marquee-wrapper .notificationTicker__content__marquee * {
+            display: inline-block
+        }
+
+        .notificationTicker .notificationTicker__content .notificationTicker__content__marquee-wrapper .notificationTicker__content__marquee-ltr-direction {
+            animation: ticker-ltr-direction infinite linear
+        }
+
+        .notificationTicker .notificationTicker__content .notificationTicker__content__marquee-wrapper .notificationTicker__content__marquee-rtl-direction {
+            animation: ticker-rtl-direction infinite linear
+        }
+
+        .notificationTicker .notificationTicker__content .notificationTicker__content__marquee-wrapper .notificationTicker__content__marquee-speed-1 {
+            animation-duration: 40s
+        }
+
+        .notificationTicker .notificationTicker__content .notificationTicker__content__marquee-wrapper .notificationTicker__content__marquee-speed-2 {
+            animation-duration: 37s
+        }
+
+        .notificationTicker .notificationTicker__content .notificationTicker__content__marquee-wrapper .notificationTicker__content__marquee-speed-3 {
+            animation-duration: 27s
+        }
+
+        .notificationTicker .notificationTicker__content .notificationTicker__content__marquee-wrapper .notificationTicker__content__marquee-speed-4 {
+            animation-duration: 20s
+        }
+
+        .notificationTicker .notificationTicker__content .notificationTicker__content__marquee-wrapper .notificationTicker__content__marquee-speed-5 {
+            animation-duration: 15s
+        }
+
+        .notificationTicker .notificationTicker__content .notificationTicker__content__marquee-wrapper .notificationTicker__content__marquee-speed-6 {
+            animation-duration: 10s
+        }
+
+        .notificationTicker .notificationTicker__content .notificationTicker__content__marquee-wrapper .notificationTicker__content__marquee-speed-7 {
+            animation-duration: 5s
+        }
+
+        .notificationTicker .notificationTicker__content:hover .notificationTicker__content__marquee {
+            animation-play-state: paused
+        }
+
+        .notificationTicker .notificationTicker__close {
+            grid-row: 1;
+            grid-column: 3;
+            -ms-grid-row: 1;
+            -ms-grid-column: 3;
+            background-color: #e7ef00;
+            padding: 10px;
+            position: relative;
+            overflow: hidden
+        }
+
+        .notificationTicker .notificationTicker__close .closeButton {
+            display: block;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            width: 16px;
+            height: 16px
+        }
+
+        .notificationTicker .notificationTicker__close svg {
+            fill: white
+        }
+
+        .notificationTicker .notificationTicker__close svg:hover {
+            fill: #f9ff56
+        }
+
+        .topic_row .topic {
+            width: 55%
+        }
+
+        .topic_row .date {
+            width: 45%;
+            text-align: right
+        }
+
+        .topic_row .icon {
+            width: 20px;
+            height: 20px;
+            background-image: url("history_icons.gif")
+        }
+
+        .topic_row .icon.alert {
+            background-position: calc(0px) 0
+        }
+
+        .topic_row .icon.alert_urgent {
+            background-position: calc(-20px) 0
+        }
+
+        .topic_row .icon.wallpaper {
+            background-position: calc(-40px) 0
+        }
+
+        .topic_row .icon.screensaver {
+            background-position: calc(-60px) 0
+        }
+
+        .topic_row .icon.alert_rss {
+            background-position: calc(-80px) 0
+        }
+
+        .topic_row .icon.alert_fullscreen {
+            background-position: calc(-100px) 0
+        }
+
+        .topic_row .icon.alert_fullscreen_urgent {
+            background-position: calc(-120px) 0
+        }
+
+        .topic_row .icon.alert_survey {
+            background-position: calc(-140px) 0
+        }
+
+        .topic_row .icon.alert_quiz {
+            background-position: calc(-160px) 0
+        }
+
+        .topic_row .icon.alert_poll {
+            background-position: calc(-180px) 0
+        }
+
+        .topic_row .icon.alert_rsvp {
+            background-position: calc(-200px) 0
+        }
+
+        .topic_row .icon.alert_rsvp_urgent {
+            background-position: calc(-220px) 0
+        }
+
+        .topic_row .icon.alert_ticker {
+            background-position: calc(-240px) 0
+        }
+
+        .topic_row .icon.alert_ticker_urgent {
+            background-position: calc(-260px) 0
+        }
+
+        .hoveredRow {
+            background-color: #CAE3BB
+        }
+
+        .hoveredRow .icon.alert {
+            background-position: calc(0px) -20px
+        }
+
+        .hoveredRow .icon.alert_urgent {
+            background-position: calc(-20px) -20px
+        }
+
+        .hoveredRow .icon.wallpaper {
+            background-position: calc(-40px) -20px
+        }
+
+        .hoveredRow .icon.screensaver {
+            background-position: calc(-60px) -20px
+        }
+
+        .hoveredRow .icon.alert_rss {
+            background-position: calc(-80px) -20px
+        }
+
+        .hoveredRow .icon.alert_fullscreen {
+            background-position: calc(-100px) -20px
+        }
+
+        .hoveredRow .icon.alert_fullscreen_urgent {
+            background-position: calc(-120px) -20px
+        }
+
+        .hoveredRow .icon.alert_survey {
+            background-position: calc(-140px) -20px
+        }
+
+        .hoveredRow .icon.alert_quiz {
+            background-position: calc(-160px) -20px
+        }
+
+        .hoveredRow .icon.alert_poll {
+            background-position: calc(-180px) -20px
+        }
+
+        .hoveredRow .icon.alert_rsvp {
+            background-position: calc(-200px) -20px
+        }
+
+        .hoveredRow .icon.alert_rsvp_urgent {
+            background-position: calc(-220px) -20px
+        }
+
+        .hoveredRow .icon.alert_ticker {
+            background-position: calc(-240px) -20px
+        }
+
+        .hoveredRow .icon.alert_ticker_urgent {
+            background-position: calc(-260px) -20px
+        }
+
+        .unreadRow {
+            background-color: #e0e0e0;
+            font-weight: bold
+        }
+
+        .unreadRow .icon.alert {
+            background-position: calc(0px) -40px
+        }
+
+        .unreadRow .icon.alert_urgent {
+            background-position: calc(-20px) -40px
+        }
+
+        .unreadRow .icon.wallpaper {
+            background-position: calc(-40px) -40px
+        }
+
+        .unreadRow .icon.screensaver {
+            background-position: calc(-60px) -40px
+        }
+
+        .unreadRow .icon.alert_rss {
+            background-position: calc(-80px) -40px
+        }
+
+        .unreadRow .icon.alert_fullscreen {
+            background-position: calc(-100px) -40px
+        }
+
+        .unreadRow .icon.alert_fullscreen_urgent {
+            background-position: calc(-120px) -40px
+        }
+
+        .unreadRow .icon.alert_survey {
+            background-position: calc(-140px) -40px
+        }
+
+        .unreadRow .icon.alert_quiz {
+            background-position: calc(-160px) -40px
+        }
+
+        .unreadRow .icon.alert_poll {
+            background-position: calc(-180px) -40px
+        }
+
+        .unreadRow .icon.alert_rsvp {
+            background-position: calc(-200px) -40px
+        }
+
+        .unreadRow .icon.alert_rsvp_urgent {
+            background-position: calc(-220px) -40px
+        }
+
+        .unreadRow .icon.alert_ticker {
+            background-position: calc(-240px) -40px
+        }
+
+        .unreadRow .icon.alert_ticker_urgent {
+            background-position: calc(-260px) -40px
+        }
+
+        .alertcontent {
+            padding: 10px
+        }
+
+        .save_button,
+        .cancel_button,
+        .apply_button,
+        .next_button,
+        .previous_button {
+            display: none
+        }
+
+        .next_img,
+        .previous_img {
+            font-family: Verdana;
+            color: #000000;
+            font-size: 11px;
+            vertical-align: middle;
+            cursor: pointer
+        }
+
+        .page_input {
+            border: 1px solid #555555;
+            width: 30px;
+            font-family: verdana;
+            vertical-align: middle;
+            font-size: 13px;
+            height: 24px
+        }
+
+        .hist_cell {
+            font-family: Verdana;
+            color: #000000;
+            font-size: 12px
+        }
+
+        .dst-content {
+            position: relative;
+            width: 100% !important;
+            height: 100% !important
+        }
+
+        .dst-content iframe {
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%
+        }
+    </style>
+    <style></style>
+    <script>var max_timer_value = 60 * 1000;
+
+        Date.prototype.getHours12 = function () {
+            let hours12 = this.getHours() % 12;
+
+            if (hours12 != 0) {
+                return hours12;
+            }
+
+            return 12;
+        }
+
+        Date.prototype.getSuffix12 = function () {
+            return this.getHours() < 12 ? "AM" : "PM";
+        }
+
+        Number.prototype.leadingZero = function (len) {
+            let result = this.toString();
+            while (result.length < len) {
+                result = '0' + result;
+            }
+            return result;
+        }
+
+        Date.prototype.toDeskAlertsFormattedString = function (formatString) {
+            return formatString.
+                replace('yyyy', this.getFullYear()).
+                replace('MM', (this.getMonth() + 1).leadingZero(2)).
+                replace('M', (this.getMonth() + 1)).
+                replace('dd', this.getDate().leadingZero(2)).
+                replace('d', this.getDate()).
+                replace('HH', this.getHours().leadingZero(2)).
+                replace('H', this.getHours()).
+                replace('hh', this.getHours12().leadingZero(2)).
+                replace('h', this.getHours12()).
+                replace('mm', this.getMinutes().leadingZero(2)).
+                replace('m', this.getMinutes()).
+                replace('ss', this.getSeconds().leadingZero(2)).
+                replace('s', this.getSeconds()).
+                replace('tt', this.getSuffix12());
+        }
+
+        window.onload = function () {
+            Init();
+        };
+
+        function Init() {
+            InitDeskAlertsAPI();
+            ShowDate();
+            TranslationSetup();
+            SkinPrint();
+            CloseWindow();
+            OkButton();
+            ResizeButton();
+            PostponeAlert();
+            SetWindowEvents();
+            SetVoteUrls();
+            UpdateVoteBlock();
+            SetupClickTracking();
+            SetupMultiAlertClick();
+
+            if (!window.DeskAlertsAPI.DeskAlerts("IsOpenFromHistory")) {
+                SetLifetime();
+                SetAutoclose();
+            }
+
+            FinishLoading();
+        }
+
+        function InitDeskAlertsAPI() {
+            if (window.invokeDeskAlertsMobileAPI) {
+                console.log('DeskAlerts X mobile detected');
+                window.DeskAlertsAPI = {
+                    DeskAlerts: function () {
+                        return window.invokeDeskAlertsMobileAPI.apply(this, arguments);
+                    },
+                    getProperty: function (prop_name, default_value) {
+                        if (prop_name === 'is_mobile') {
+                            return true;
+                        }
+                        return default_value;
+                    },
+                    startResizing: function () { },
+                    capturemouse: function () { },
+                }
+                return;
+            }
+
+            try {
+                window.external.DeskAlerts("IsOpenFromHistory");
+                console.log('DeskAlerts Desktop detected');
+                window.DeskAlertsAPI = {
+                    DeskAlerts: function (arg1, arg2, arg3) {
+                        return window.external.DeskAlerts(arg1, arg2, arg3);
+                    },
+                    getProperty: function (arg1, arg2, arg3) {
+                        return window.external.getProperty(arg1, arg2, arg3);
+                    },
+                    startResizing: function (arg1, arg2, arg3) {
+                        return window.external.startResizing(arg1, arg2, arg3);
+                    },
+                    capturemouse: function (arg1, arg2, arg3) {
+                        return window.external.capturemouse(arg1, arg2, arg3);
+                    },
+                }
+                return;
+            } catch (e) {
+                // continue;
+            }
+
+            console.log('Browser emulation');
+            window.DeskAlertsAPI = {
+                DeskAlerts: DeskAlertsAPIStub,
+                getProperty: function (prop_name, default_value) {
+                    return default_value;
+                },
+                startResizing: function () { },
+                capturemouse: function () { },
+            };
+
+        }
+
+
+        function DeskAlertsAPIStub(name) {
+            if (name === 'Close') {
+                return window.parent.postMessage('closeMe', '*');
+            }
+
+            return false;
+        }
+
+        function SkinPrint() {
+            let printButton = document.getElementById("printButton");
+            if (printButton == null) {
+                return;
+            }
+            if (window.DeskAlertsAPI.getProperty("is_mobile", false)) {
+                printButton.style.display = "none";
+                return;
+            }
+            printButton.onclick = function () {
+                window.print();
+            };
+        }
+
+        function CloseWindow() {
+            let closeButton = document.getElementById("close_img");
+            if (closeButton == null) {
+                return;
+            }
+            closeButton.onclick = function () {
+                window.DeskAlertsAPI.DeskAlerts("Close");
+            };
+
+            if (window.DeskAlertsAPI.DeskAlerts("IsOpenFromHistory")) {
+                closeButton.style.display = "block";
+            }
+        }
+
+        function OkButton() {
+            let okButton = document.getElementById("acknowledgmentOk");
+            if (okButton == null) {
+                return;
+            }
+
+            let contentId = document.getElementById("contentId").innerHTML;
+
+            if (window.DeskAlertsAPI.DeskAlerts("IsOpenFromHistory")) {
+                okButton.style.display = "none";
+            }
+            okButton.onclick = function () {
+                window.DeskAlertsAPI.DeskAlerts("SetStatus", contentId);
+                window.DeskAlertsAPI.DeskAlerts("Close");
+            };
+        }
+
+        function ResizeButton() {
+            let resizeButton = document.getElementById("resize_icon");
+            if (resizeButton == null) {
+                return null;
+            }
+
+            resizeButton.onmousedown = function () {
+                window.DeskAlertsAPI.startResizing();
+            }
+
+            return null;
+        }
+
+        function ShowDate() {
+            let dateMode = document.getElementById("dateMode").innerHTML;
+            let datetimeFormat = document.getElementById("datetimeFormat").innerHTML;
+            let createDateString = document.getElementById("createDate").innerHTML;
+            let receiveDateString = document.getElementById("receiveDate").innerHTML;
+
+            if (dateMode == 0) {
+                return;
+            }
+
+            let delimiter = "<br/>";
+            let prefix = "Created";
+            let showDate = new Date(createDateString);
+            if (dateMode == 2) {
+                prefix = "Received";
+                showDate = new Date(receiveDateString);
+            }
+
+            let formattedDate = showDate.toDeskAlertsFormattedString(datetimeFormat);
+            document.getElementById("create").innerHTML = prefix + delimiter + formattedDate;
+        }
+
+        function PostponeAlert() {
+            let postponeButton = document.getElementById("postponeButton");
+            let postponeTimeSelect = document.getElementById("postponeTime");
+            let contentId = document.getElementById("contentId").innerHTML;
+
+            if (postponeButton == null || postponeTime == null || contentId == null) {
+                return null;
+            }
+            postponeButton.onclick = function () {
+                let postponeTime = postponeTimeSelect[postponeTimeSelect.selectedIndex].value;
+                window.DeskAlertsAPI.DeskAlerts("Postpone", contentId, postponeTime);
+            };
+
+            let postponeMode = window.DeskAlertsAPI.getProperty('postpone_mode', '1');
+            let isUrgent = window.DeskAlertsAPI.getProperty('urgent', '0');
+            let hidePostpone = postponeMode === '0' || (postponeMode === '2' && isUrgent === '0');
+            if (window.DeskAlertsAPI.getProperty('is_mobile', false)) {
+                hidePostpone = true;
+            }
+            if (window.DeskAlertsAPI.DeskAlerts("IsOpenFromHistory")) {
+                hidePostpone = true;
+            }
+
+            if (hidePostpone) {
+                postponeTimeSelect.style.display = 'none';
+                postponeButton.style.display = 'none';
+            }
+
+            return null;
+        }
+
+        function SetWindowEvents() {
+            const isFullscreen = false;
+
+            function whichElement(e) {
+                var targ;
+                if (!e) e = window.event;
+                if (e.target) targ = e.target;
+                else if (e.srcElement) targ = e.srcElement;
+
+                if (targ.nodeType === 3) // defeat Safari bug
+                    targ = targ.parentNode;
+
+                var tag = targ.tagName ? targ.tagName.toUpperCase() : null;
+                var type = targ.getAttribute ? targ.getAttribute("type") : null; type = type ? type.toLowerCase() : null;
+
+                return (tag === "INPUT" && (type === "text" || type === "password")) || tag === "TEXTAREA" || tag === "SELECT" ||
+                    (targ.onclick && (e.type === "click" || e.type === "mousedown" || e.type === "mouseup")) ? true : false;
+            }
+
+            const captureMouse = function (e) {
+                if (!whichElement(e) && !isFullscreen) {
+                    try {
+                        window.DeskAlertsAPI.capturemouse();
+                    } catch (e) { }
+                    return false;
+                }
+                return true;
+            }
+
+            const elements = document.getElementsByClassName('notification__draggable');
+            for (let i = 0; i < elements.length; ++i) {
+                const title = elements[i];
+                title.onmousedown = captureMouse;
+                title.ondragstart = captureMouse;
+            }
+
+        }
+
+
+        function CloseAtDate(date, func) {
+            var now = (new Date()).getTime() / 1000;
+            var diff = Math.max((date - now), 0) * 1000;
+
+            if (diff > max_timer_value) {
+                setTimeout(function () { CloseAtDate(date, func); }, max_timer_value);
+            } else {
+                setTimeout(func, diff);
+            }
+        }
+
+
+        function SetLifetime() {
+            if (window.DeskAlertsAPI.getProperty("is_mobile", false)) {
+                return;
+            }
+            let expireTimestamp = window.DeskAlertsAPI.getProperty('to_date', '');
+            if (!expireTimestamp) {
+                return;
+            }
+
+            CloseAtDate(expireTimestamp, CloseWindowSlot);
+        }
+
+        function SetAutoclose() {
+            if (window.DeskAlertsAPI.getProperty("is_mobile", false)) {
+                return;
+            }
+            let contentAutoclose = document.getElementById("contentAutoclose").innerHTML;
+            let timeout = Math.abs(parseInt(contentAutoclose));
+
+            if (timeout > 0 && (1000 * timeout) < 2147482647) {
+                setTimeout(CloseWindowSlot, timeout * 1000);
+            }
+        }
+
+        function CloseWindowSlot() {
+            window.DeskAlertsAPI.DeskAlerts("Close");
+        }
+
+        function SetVoteUrls() {
+            const voteChangeUrl = document.getElementById("voteBlock").getAttribute("VoteChangeUrl");
+
+            let userVoted = document.getElementById("userVoted");
+            userVoted.setAttribute("onclick", "Vote('" + voteChangeUrl + "');");
+
+            let userUnVoted = document.getElementById("userUnvoted");
+            userUnVoted.setAttribute("onclick", "Vote('" + voteChangeUrl + "');");
+        }
+
+        function UpdateVoteBlock() {
+            let userFeedbackDiv = document.getElementById("userFeedbackDiv");
+            if (userFeedbackDiv.style.display != "block") {
+                return;
+            }
+
+            let voteBlock = document.getElementById("voteBlock");
+            let voteUrl = voteBlock.getAttribute("voteUrl");
+            let xhttp = new XMLHttpRequest();
+            xhttp.open("GET", voteUrl, true);
+            xhttp.onreadystatechange = function () {
+                if (xhttp.readyState == XMLHttpRequest.DONE) {
+                    let response = JSON.parse(xhttp.responseText);
+                    if (response.status == "Success") {
+                        let voteClass = response.data.voted ? "voted" : "unvoted";
+                        voteBlock.setAttribute("class", voteClass);
+                    }
+                }
+            }
+            xhttp.send();
+        }
+
+        function Vote(voteChangeUrl) {
+            let xhttp = new XMLHttpRequest();
+            xhttp.open("POST", voteChangeUrl, true);
+            xhttp.onreadystatechange = function () {
+                if (xhttp.readyState == XMLHttpRequest.DONE) {
+                    UpdateVoteBlock();
+                }
+            }
+
+            xhttp.send();
+        }
+
+        function SetupClickTracking() {
+            let maximumLengthOfUri = 2048;
+            let clickTrackingServiceUrl = document.getElementById("clickTrackingServiceUrl").innerHTML;
+            let bodyElem = document.getElementById("body");
+            if (!clickTrackingServiceUrl || !bodyElem) {
+                return;
+            }
+
+            let links = bodyElem.getElementsByTagName("a");
+            for (let i = 0; i < links.length; ++i) {
+                let a = links[i];
+                if (a.hasAttribute("orig-href")) {
+                    continue;
+                }
+                let newUri = clickTrackingServiceUrl + "?" + encodeURIComponent(a.href);
+                if (newUri.length > maximumLengthOfUri) {
+                    continue;
+                }
+                a.setAttribute("orig-href", a.href);
+                a.href = newUri;
+            }
+
+        }
+
+        function LanguagesStringsIntersects(app, server) {
+            let left = app.toLowerCase().split(",");
+            let right = server.toLowerCase().split(",");
+
+            for (let l = 0; l < left.length; ++l) {
+                for (let r = 0; r < right.length; ++r) {
+                    if (left[l].trim() === right[r].trim()) {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        function TranslationSetup() {
+            let translationVariantsElement = document.getElementById("translationVariants");
+            if (!translationVariantsElement) {
+                return;
+            }
+
+            let appLocale;
+            try {
+                appLocale = window.DeskAlertsAPI.getProperty("customlocale", "");
+                if (!appLocale) appLocale = window.DeskAlertsAPI.getProperty("locale", "");
+            } catch (err) {
+                // client app does not support getProperty
+                return;
+            }
+
+            let translationElements = translationVariantsElement.getElementsByTagName("translation");
+            for (let i = 0; i < translationElements.length; ++i) {
+                let translation = translationElements[i];
+                let language = translation.getAttribute("language");
+                if (!language) {
+                    continue;
+                }
+
+                if (LanguagesStringsIntersects(appLocale, language)) {
+                    let title = document.getElementById("title");
+                    let body = document.getElementById("body");
+
+                    title.innerHTML = translation.getElementsByTagName("content_title")[0].innerHTML;
+                    body.innerHTML = translation.getElementsByTagName("content_body")[0].innerHTML;
+                    return;
+                }
+            }
+        }
+
+        var MultipleAlertService = (function () {
+            let ButtonClass = "sendData";
+            let ButtonIdPrefix = "submitButton";
+
+            function MultipleAlertService(url) {
+                this.url = url;
+
+                let actions = document.getElementsByClassName(ButtonClass);
+                let self = this;
+                for (let i = 0; i < actions.length; ++i) {
+                    actions[i].addEventListener("click", function (e) {
+                        let id = parseInt(this.id.replace(ButtonIdPrefix, ''));
+                        SendApiRequest.call(self, { PartId: id }, UpdateView);
+                        e.preventDefault();
+                        return false;
+                    });
+                }
+            }
+
+            function SendApiRequest(data, callback) {
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState != XMLHttpRequest.DONE) {
+                        return;
+                    }
+
+                    let response = JSON.parse(xhr.responseText);
+                    if (response.status != "Success") {
+                        return;
+                    }
+
+                    if (callback) {
+                        callback(response.data);
+                    }
+                }
+                xhr.open("POST", this.url, true);
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                if (data) {
+                    xhr.send(JSON.stringify(data));
+                } else {
+                    xhr.send();
+                }
+            }
+
+            function UpdateView(tasks) {
+                tasks.forEach(function (task) {
+                    if (!task.isConfirmed) {
+                        return;
+                    }
+
+                    let button = document.getElementById(ButtonIdPrefix + task.partId);
+                    if (!button) {
+                        return;
+                    }
+
+                    let parent = button.parentElement;
+                    parent.removeChild(button);
+                    let confirmed = document.createElement('span');
+                    confirmed.innerText = 'Confirmed';
+                    parent.appendChild(confirmed);
+                });
+            }
+
+            MultipleAlertService.prototype.load = function () {
+                SendApiRequest.call(this, undefined, UpdateView);
+            }
+
+            return MultipleAlertService;
+
+        })();
+
+        function SetupMultiAlertClick() {
+            let elem = document.getElementById("multipleAlertServiceUrl");
+            if (!elem) {
+                return;
+            }
+            if (!elem.innerHTML) {
+                return;
+            }
+
+            let service = new MultipleAlertService(elem.innerHTML);
+            service.load();
+        }
+
+
+        function FinishLoading() {
+            window.DeskAlertsAPI.DeskAlerts("ContentLoaded");
+        }</script>
+</head>
+
+<body>
+    <div class="notification">
+        <div class="notification__header notification__draggable">
+            <div class="notification__header__logo"></div>
+            <div class="notification__header__text"></div>
+        </div>
+
+        <div class="notification__title">
+            <div class="notification__title__text">
+                <div id="title" class="notification__title__textTitle"><strong>ertete</strong></div>
+            </div>
+            <div class="notification__title__date" id="alertcreate_td">
+                <span id="create"></span>
+            </div>
+            <div class="clearFix"></div>
+        </div>
+
+        <div class="notification__content">
+            <div id="body" class="dst-content notification__content__text ">
+                <p><iframe src="https://app.digitalsignage-templates.com/template/13e1492d-bdaf-41df-93e0-23c2c17017a1"
+                        allowfullscreen="allowfullscreen"></iframe></p>
+            </div>
+        </div>
+
+        <div class="notification__buttons">
+            <div class="notification__print svgIcons" id="printButton" style="display: none;">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30"
+                    enable-background="new 0 0 30 30" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M24.5,9.9h-19V0h13.7l5.4,5.3V9.9z M7,8.4h16V5.9l-4.5-4.4H7V8.4z" />
+                        </g>
+                        <g>
+                            <path
+                                d="M20.6,23.1H9.3c-0.4,0-0.8-0.3-0.8-0.8s0.3-0.8,0.8-0.8h11.2c0.4,0,0.8,0.3,0.8,0.8S21,23.1,20.6,23.1z" />
+                        </g>
+                        <g>
+                            <path
+                                d="M20.6,26.6H9.3c-0.4,0-0.8-0.3-0.8-0.8s0.3-0.8,0.8-0.8h11.2c0.4,0,0.8,0.3,0.8,0.8S21,26.6,20.6,26.6z" />
+                        </g>
+                        <g>
+                            <polygon points="23.1,6.8 17.7,6.8 17.7,1.3 19.2,1.3 19.2,5.3 23.1,5.3   " />
+                        </g>
+                        <g>
+                            <path
+                                d="M19.2,14.6H6.2c-0.4,0-0.8-0.3-0.8-0.8s0.3-0.8,0.8-0.8h12.9c0.4,0,0.8,0.3,0.8,0.8S19.6,14.6,19.2,14.6z" />
+                        </g>
+                        <path
+                            d="M28.4,8.4H1.6C0.7,8.4,0,9.1,0,10v11.5c0,0.9,0.7,1.6,1.6,1.6h3.8V30h19v-6.8h3.9c0.9,0,1.6-0.7,1.6-1.6V10   C30,9.1,29.3,8.4,28.4,8.4z M23,28.5h-16v-8.8h16V28.5z M28.5,21.5c0,0.1-0.1,0.1-0.1,0.1h-3.9v-3.5h-19v3.5H1.6   c-0.1,0-0.1-0.1-0.1-0.1V10c0-0.1,0.1-0.1,0.1-0.1h26.7c0.1,0,0.1,0.1,0.1,0.1V21.5z" />
+                        <circle cx="23.8" cy="13.8" r="0.8" />
+                        <circle cx="21.6" cy="13.8" r="0.8" />
+                    </g>
+                </svg>
+            </div>
+            <div class="notification__userFeedback svgIcons" id="userFeedbackDiv" style="display: none;">
+                <div id="voteBlock" class="unvoted" voteUrl="%VoteUrl%" voteChangeUrl="%VoteChangeUrl%">
+                    <div class="userVoted" id="userVoted">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
+                        </svg>
+                    </div>
+                    <div class="userUnvoted" id="userUnvoted">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                            clip-rule="evenodd">
+                            <path
+                                d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="notification__postponeWrapper" id="postponeDiv" style="display: none;">
+                <select id="postponeTime" name="postponeTime" class="notification__postponeWrapper__select">
+                    <option value="60">1 minute</option>
+                    <option value="120">2 minutes</option>
+                    <option value="300">5 minutes</option>
+                    <option value="600">10 minutes</option>
+                    <option value="900">15 minutes</option>
+                    <option value="1800">30 minutes</option>
+                    <option value="2700">45 minutes</option>
+                    <option value="3600">1 hour</option>
+                    <option value="7200">2 hours</option>
+                </select>
+                <input type="button" class="notification__postponeWrapper__postpone" id="postponeButton"
+                    name="postponeButton" value="Postpone" alt="Postpone" />
+                <input type="button" class="notification__postponeWrapper__ok" id="acknowledgmentOk" name="OkButton"
+                    value="Ok" alt="Ok" />
+            </div>
+            <div class="clearFix"></div>
+        </div>
+
+        <div class="notification__footer"></div>
+
+        <div class="notification__close svgIcons" title="Close window" id="close_img" style="display: block;">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                <g>
+                    <path
+                        d="M629.3,499.1l333.5-331.8c18.1-18.1,27.2-40,27.2-65.5c0-25.5-9.1-47.1-27.2-64.7c-18.1-17.6-40-26.4-65.5-26.4s-47.4,8.5-65.5,25.5L500,369.8L168.2,36.4c-9.1-7.9-19.3-14.2-30.6-18.7s-23-6.8-34.9-6.8s-23.5,2.3-34.9,6.8S46.3,28.4,37.2,36.4C19.1,54.5,10,76.4,10,101.9c0,25.5,9.1,47.4,27.2,65.5l333.5,331.8L37.2,832.6c-18.1,17-27.2,38.3-27.2,63.8c0,25.5,9.1,47.4,27.2,65.5c18.1,18.1,40,27.2,65.5,27.2c25.5,0,47.4-9.1,65.5-27.2L500,630.2l331.8,331.8c18.1,18.1,40,27.2,65.5,27.2s47.4-9.1,65.5-27.2c18.1-18.1,27.2-40,27.2-65.5c0-25.5-9.1-46.8-27.2-63.8L629.3,499.1z" />
+                </g>
+            </svg>
+        </div>
+        <div id="resize_icon" class="resize_icon" style="display: none;"></div>
+    </div>
+    <div id="contentId" class="contentId">28</div>
+    <div id="contentLifetime" class="contentId">2022.06.08 20:38:34</div>
+    <div id="contentAutoclose" class="contentId">0</div>
+    <div id="clickTrackingServiceUrl" class="contentId">
+        http://diamooncomp/DeskAlerts/api/v2/track/redirect/eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9%20eyJVIjoiNCIsIkEiOiIyOCJ9%20i180BuirqbmiNN9JEgjQsZdikm7H7uVKOoTJaFQwavk
+    </div>
+    <div id="translationVariants" class="contentId">
+        <translations></translations>
+    </div>
+    <div id="createDate" class="contentId">2022-06-07T20:38:34.9448846+03:00</div>
+    <div id="receiveDate" class="contentId">2022-06-07T20:38:46.3196029+03:00</div>
+    <div id="dateMode" class="contentId">1</div>
+    <div id="datetimeFormat" class="contentId">dd/MM/yyyy HH:mm:ss</div>
+    <div id="multipleAlertServiceUrl" class="contentId"></div>
+</body>
+
+</html>
